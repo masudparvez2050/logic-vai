@@ -13,7 +13,8 @@ export async function promptRequest(prompt: string, history: ChatHistory[]) {
     if (!apiKey) throw new Error('API KEY is missing')
     const genAI = new GoogleGenerativeAI(apiKey)
     // const model = genAI.getGenerativeModel({ model: 'gemini-exp-1206' })
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro-latest' })
+    // const model = genAI.getGenerativeModel({ model: 'gemini-1.5-pro-latest' })
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' })
     const chat = model.startChat({
       history: [
         {
