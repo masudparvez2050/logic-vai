@@ -143,7 +143,7 @@ export function ChatForm() {
               onKeyDown={handleKeyDown}
               onChange={(e) => void setPrompt(e.target.value)}
             />
-            {/* <input
+            <input
               disabled
               onChange={handleFileChange}
               accept={allowedMimeTypes.join(', ')}
@@ -151,8 +151,8 @@ export function ChatForm() {
               type="file"
               hidden
               multiple
-            /> */}
-            {/* <div className="flex items-center justify-between text-white">
+            />
+            <div className="flex items-center justify-between text-white">
               <button
                 onClick={handleClickFile}
                 type="button"
@@ -167,7 +167,7 @@ export function ChatForm() {
               >
                 <FaArrowAltCircleUp className="size-full" />
               </button>
-            </div> */}
+            </div>
           </label>
         </form>
         <p className="py-2 text-xs">

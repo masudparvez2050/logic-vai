@@ -90,7 +90,7 @@ export default function LineAnimation() {
           </defs>
           <rect width="100%" height="100%" fill="url(#blue-gradient)" />
           <g filter="url(#glow)" className="matrix">
-            {Array.from({ length: 100 }).map((_, i) => {
+            {Array.from({ length: 10 }).map((_, i) => {
               // Generate random properties for animation
               const xPosition = Math.random() * 100 // Random x-position (0% to 100%)
               const animationDelay = Math.random() * 5 // Random delay (0s to 5s)
